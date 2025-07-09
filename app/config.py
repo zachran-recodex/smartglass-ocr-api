@@ -19,7 +19,7 @@ class Config:
     MAX_CONTENT_LENGTH = 16 * 1024 * 1024  # 16MB max upload size
     
     # OCR settings
-    OCR_TIMEOUT = int(os.environ.get('OCR_TIMEOUT', 120))  # 2 minutes timeout for OCR processing
+    OCR_TIMEOUT = int(os.environ.get('OCR_TIMEOUT', 300))  # 5-minute timeout for OCR processing
     DEFAULT_LANGUAGE = os.environ.get('DEFAULT_LANGUAGE', 'eng+ind')  # Default OCR language
     DEFAULT_SUMMARY_LENGTH = int(os.environ.get('DEFAULT_SUMMARY_LENGTH', 200))  # Default summary length
     DEFAULT_SUMMARY_STYLE = os.environ.get('DEFAULT_SUMMARY_STYLE', 'concise')  # Default summary style

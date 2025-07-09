@@ -12,7 +12,6 @@ build/
 venv/
 env/
 ENV/
-.env
 
 # IDE files
 .idea/
@@ -59,3 +58,5 @@ Desktop.ini
 # Linux
 *~
 ocr_api.log
+
+!requirements.txt

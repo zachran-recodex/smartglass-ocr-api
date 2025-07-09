@@ -914,6 +914,8 @@ def process_file():
             timeout = max(default_timeout, 300)  # Longer timeout for handwritten
         elif process_type == 'id_card':
             timeout = max(default_timeout, 600)  # Increased timeout to 10 minutes for ID cards
+        elif file_path.lower().endswith('.pdf'):
+            timeout = max(default_timeout, 600)  # Increased timeout to 10 minutes for PDF files
         elif file_size > 5 * 1024 * 1024:  # Files over 5MB
             timeout = max(default_timeout, 240)  # Longer timeout for large files
         else:

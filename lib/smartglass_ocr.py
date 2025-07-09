@@ -177,7 +177,7 @@ class SmartGlassOCR:
             "summary_style": "concise",  # Options: concise, detailed, bullets, structured
             "use_gpu": False,
             "max_workers": 4,      # For parallel processing
-            "ocr_timeout": 30,     # Timeout for OCR process in seconds
+            "ocr_timeout": 600,    # Timeout for OCR process in seconds (10 minutes)
             "preprocessing_level": "auto",  # auto, minimal, standard, aggressive
             "debug_mode": False,
             "cache_processed_images": True,
